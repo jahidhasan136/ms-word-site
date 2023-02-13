@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Word</title>
+    <script src="https://kit.fontawesome.com/95c37c9ad4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <div class="w-9/12 mx-auto mt-28 bg-blue-400 p-5 shadow-2xl rounded-md">
+            <h1 class="text-center font-bold text-4xl text-black">My text Editor</h1>
+            <div class="bg-blue-300 px-5 pt-1 mt-8 border border-black border-2">
+                <div class="flex justify-between mt-10 font-semibold mb-3 text-black">
+                    <div class="flex gap-2">
+                        <button id="btn-bold" class="hover:bg-blue-400 rounded-full px-2">B</button>
+                        <button id="btn-italic" class="italic hover:bg-blue-400 rounded-full px-2">I</button>
+                        <button id="btn-underline" class="hover:bg-blue-400 rounded-full px-2">U</button>
+                    </div>
+                    <div class="flex justify-center gap-2">
+                        <button class="hover:bg-blue-400 rounded-full px-2" id="btn-left"><i class="fa fa-align-left"></i></button>
+                        <button id="btn-center" class="hover:bg-blue-400 rounded-full px-2"><i class="fa fa-align-center"></i></button>
+                        <button id="btn-right" class="hover:bg-blue-400 rounded-full px-2"><i class="fa fa-align-right"></i></button>
+                        <button id="btn-justify" class="hover:bg-blue-400 rounded-full px-2"><i class="fa fa-align-justify"></i></button>
+                    </div>
+                    <div class="flex justify-center gap-3">
+                        <input id="text-size" class="w-1/6 text-black px-2" type="number">
+                        <button class="hover:bg-blue-400 rounded-full px-2">aA</button>
+                        <input id="color" type="color">
+                    </div>
+                </div>
+                <div class="border-b border-black mb-3"></div>
+                <div class="flex justify-center pb-5">
+                    <textarea id="text-field" class="px-2" name="" cols="80" rows="10" placeholder="write your notes"></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="word.js"></script>
+</body>
+</html>
