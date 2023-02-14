@@ -37,6 +37,10 @@ document.getElementById('btn-justify').addEventListener('click', function(){
     document.getElementById('text-field').style.textAlign = 'justify';
 });
 
+document.getElementById('text-size').addEventListener('keyup', function(){
+    const size = document.getElementById('text-size');
+    document.getElementById('text-field').style.fontSize = size.value + "px";
+});
 
 document.getElementById('color').addEventListener('change', function(){
     const color = document.getElementById('color');
@@ -44,8 +48,4 @@ document.getElementById('color').addEventListener('change', function(){
 });
 
 
-document.getElementById('text-size').addEventListener('change', function(){
-    const size = document.getElementById('text-size');
-    document.getElementById('text-field').style.fontSize = size.value + "px";
-});
 
